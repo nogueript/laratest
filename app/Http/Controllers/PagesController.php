@@ -18,13 +18,10 @@ class PagesController extends Controller
 	return view('contact');
     }
 
-    public function getChat(){
-	return view('chat');
+    public function getHaha(){
+	return view('haha');
     }
-
-    public function getSend(){
-	return view('send');
-    }
+    
 
     public function getObj(){
 	return view('obj');

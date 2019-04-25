@@ -28,7 +28,9 @@ const app = new Vue({
     data:{
 	message:'',
 	chat:{
-	    message:[]
+	    message:[],
+	    user:[],
+	    color:[]
 	}
     },
     methods:{

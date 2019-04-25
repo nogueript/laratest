@@ -3,7 +3,7 @@
     <li class="list-group-item" :class="className">
       <slot></slot>
     </li>
-    <small class="badge float-right" :class="badgeClass">{{ user }}</small>
+    <small class="badge float-right" :class='badgeClass'>{{ user }}</small>
   </div>
 </template>
 
