@@ -26,12 +26,12 @@ Vue.component('message', require('./components/message.vue').default);
 const app = new Vue({
     el: '#chat',
     data:{
-		message:'',
-		chat:{
-			message:[],
-			user:[],
-			color:[]
-		}
+			message:'',
+			chat:{
+				message:[],
+				user:[],
+				color:[]
+			}
     },
     methods:{
 		send(){
