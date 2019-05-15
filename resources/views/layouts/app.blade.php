@@ -24,7 +24,6 @@
 
 <body>
   @include('inc.navbar')
-  @include('inc.progressbar')
   <div class="container">
     @yield('content')
   </div>
