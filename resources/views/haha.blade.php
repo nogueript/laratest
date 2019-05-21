@@ -26,11 +26,11 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Laratest</h3>
+                <h3>LinTH</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
+                <p>Menu</p>
                 <li class="active">
                     <a href="/"><i class="fas fa-home"></i> Home</a>
                 </li>
@@ -44,6 +44,14 @@
                     <a href="/contact"><i class="fas fa-envelope"></i> Contact</a>
                 </li>
             </ul>
+	<ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="signin">Sign In</a>
+		</li>
+		<li>
+		    <a href="#" class="signup">Sign Up</a>
+                </li>
+	</ul>
 
         </nav>
 
@@ -96,7 +104,7 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
                 $(this).toggleClass('active');
-		$('.navbar-brand').toggle("slide");
+                $('.navbar-brand').toggle("slide");
             });
         });
     </script>
