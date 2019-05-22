@@ -28,10 +28,7 @@
   </a>
 </div>
 <p></p>
-<div class="card border-primary mb-3" style="max-width: 18rem;">
-   <img class="card-img-top" src="https://previews.123rf.com/images/seamartini/seamartini1608/seamartini160800317/61616196-seafood-seamless-pattern-background-vector-flat-icons-of-sushi-shrimp-squid-salmon-crab-rice-nori-ja.jpg" alt="card image najaaa">
-   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card jaaaa</p>
-  </div>
-</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus ligula eleifend urna semper pulvinar. Donec ac lobortis elit, at euismod mi. Sed at elit dui. Cras sed sapien at nulla dictum vulputate a vitae lorem. Pellentesque vel maximus orci. Cras et scelerisque massa, non finibus purus. Praesent iaculis convallis nunc, ut tristique quam interdum in.
+
+In et maximus ante. Etiam nec tellus non ligula mollis tempor eget id leo. Pellentesque a consectetur purus. Aenean at lacus dui. Aliquam euismod gravida libero id malesuada. Nullam velit leo, interdum eget nisl eu, rutrum tincidunt tortor. Pellentesque in odio eu risus faucibus sodales at sed est. In ligula augue, commodo ultricies turpis vitae, auctor mollis nisl. Donec gravida nibh a felis posuere, id consequat mauris venenatis. Donec sed ligula tempus, gravida velit in, mollis mauris. Donec eleifend in urna vitae mattis. Ut ut porta ex. Donec convallis nulla ipsum, nec dapibus dolor imperdiet eget.</p>
 @endsection
