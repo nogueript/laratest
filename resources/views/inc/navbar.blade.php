@@ -44,7 +44,7 @@
                         <span></span>
                         <span></span>
                     </button>
-                    <a class="navbar-brand" style="display: none;" href="{{ url('/') }}">{{ config('app.name', 'Home') }}</a>
+                    <a class="navbar-brand"  href="{{ url('/') }}">{{ config('app.name', 'Home') }}</a>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
@@ -82,7 +82,6 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
                 $(this).toggleClass('active');
-                $('.navbar-brand').toggle("slide");
             });
         });
     </script>
