@@ -139,12 +139,12 @@ a, a:hover, a:focus {
 #sidebar .sidebar-header {
     text-align: center;
     padding: 20px;
-    background: #404040;
+    background: #262626;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #262626;
+    border-bottom: 1px solid #fff;
 }
 
 #sidebar ul p {
@@ -158,13 +158,13 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #ff6b00;
+    color: #f1275d;
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #ff6b00;
+    background: #f1275d;
 }
 
 
@@ -183,7 +183,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #ffa500;
+    background: #f34573;
 }
 
 ul.CTAs {
@@ -210,11 +210,11 @@ a.article, a.article:hover {
 
 a.signin {
     background: #fff;
-    color: #ff6b00;
+    color: #f1275d;
 }
 
 a.signup {
-    background: #ff6b00;
+    background: #f1275d;
     color: #fff;
 }
 
