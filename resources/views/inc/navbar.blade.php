@@ -2,7 +2,7 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>LinTH</h3>
+                <h3>Lost in TH</h3>
             </div>
 
             <ul class="list-unstyled components">
@@ -22,16 +22,38 @@
             </ul>
             <div id="btn-sidebar">
               <ul class="list-unstyled CTAs">
+                  @guest
                   <li>
-                      <a href="#" class="signin">Sign In</a>
+                      <a href="/login" class="signin">Sign In</a>
                   </li>
+                  @if (Route::has('register'))
                   <li>
-                      <a href="#" class="signup">Sign Up</a>
+                      <a href="/register" class="signup">Sign Up</a>
                   </li>
+                  @endif
+                  @else
+                  <li class="active">
+                    <a href="#userSub" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                      {{ Auth::user()->name }}
+                    </a>
+                    <ul class="collapse list-unstyled" id="userSub">
+                      <li>
+                        <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                        </form>
+                      </li>
+		      <li>
+			<a href="#">Profile</a>
+		      </li>
+                    </ul>
+                  </li>
+                  @endguest
               </ul>
             </div>
-
-
         </nav>
 
         <!-- Page Content Holder -->
@@ -66,7 +88,7 @@
                     </div>
                 </div>
             </nav>
-	    @yield('content')
+            @yield('content')
         </div>
     </div>
 
@@ -81,7 +103,8 @@
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
-                $(this).toggleClass('active');
+		$(this).toggleClass('active');
             });
         });
     </script>
+
