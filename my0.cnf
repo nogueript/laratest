@@ -4,9 +4,9 @@
 [mysqld]
 port=3310
 server_id=1
-bind-address="103.253.132.147"
-report_host="103.253.132.147"
-disabled_storage_engines="MyISAM,BLACKHOLE,FEDERATED,ARCHIVE,MEMORY"
+bind-address="x.x.x.x"
+report_host="x.x.x.x"
+disabled_storage_engines="MyISAM,BLACKHOLE,FEDERATED,ARCHIVE,MEMORY,RocksDB"
 
 gtid_mode=ON
 enforce_gtid_consistency=ON
@@ -22,9 +22,9 @@ relay_log=db-cluster1-relay-bin
 transaction_write_set_extraction=XXHASH64
 group_replication_group_name="5516ba1f-70d9-40fd-b26b-309e87360be5"
 group_replication_start_on_boot=OFF
-group_replication_local_address= "103.253.132.147:33061"
-group_replication_group_seeds= "103.253.132.147:33061,103.253.132.148:33061,103.253.132.149:33061"
-group_replication_ip_whitelist="103.253.132.147,103.253.132.148,103.253.132.149"
+group_replication_local_address= "x.x.x.x:33061"
+group_replication_group_seeds= "x.x.x.x:33061,x.x.x.x:33061,x.x.x.x:33061"
+group_replication_ip_whitelist="x.x.x.x,x.x.x.x,x.x.x.x"
 group_replication_bootstrap_group=OFF
 group_replication_recovery_ssl_ca
 group_replication_recovery_ssl_key
@@ -37,7 +37,7 @@ innodb_log_file_size=900M
 innodb_lock_wait_timeout=300
 innodb_locks_unsafe_for_binlog=1
 innodb_thread_concurrency=0
-innodb_concurrency_tickets=500
+#innodb_concurrency_tickets=500
 #
 # Remove leading # and set to the amount of RAM for the most important data
 # cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.
@@ -53,13 +53,15 @@ innodb_concurrency_tickets=500
 # join_buffer_size = 128M
 # sort_buffer_size = 2M
 # read_rnd_buffer_size = 2M
+
 max_user_connections = 0
-max_allowed_packet = 64M
+max_allowed_packet = 32M
+#default-authentication-plugin=mysql_native_password
 datadir=/var/lib/mysql
 socket=/var/lib/mysql/mysql.sock
 
 # Disabling symbolic-links is recommended to prevent assorted security risks
-symbolic-links=0
+#symbolic-links=0
 
 log-error=/var/log/mysqld.log
 pid-file=/var/run/mysqld/mysqld.pid
