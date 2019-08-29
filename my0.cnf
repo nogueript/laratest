@@ -35,9 +35,7 @@ innodb_file_per_table
 innodb_buffer_pool_size=1500M
 innodb_log_file_size=900M
 innodb_lock_wait_timeout=300
-innodb_locks_unsafe_for_binlog=1
 innodb_thread_concurrency=0
-#innodb_concurrency_tickets=500
 #
 # Remove leading # and set to the amount of RAM for the most important data
 # cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.
