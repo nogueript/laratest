@@ -3,6 +3,7 @@ port=3310
 server_id=1
 bind-address=" "
 report_host=" "
+storage_engine = InnoDB 
 disabled_storage_engines="MyISAM,BLACKHOLE,FEDERATED,ARCHIVE,MEMORY,RocksDB"
 
 gtid_mode=ON
