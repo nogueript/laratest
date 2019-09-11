@@ -4,7 +4,7 @@ server_id=1
 bind-address=" "
 report_host=" "
 default-storage-engine=innodb
-disabled_storage_engines="MyISAM,BLACKHOLE,FEDERATED,ARCHIVE,MEMORY,RocksDB"
+disabled_storage_engines="MyISAM,BLACKHOLE,FEDERATED,ARCHIVE,MEMORY,RocksDB,TokuDB"
 
 gtid_mode=ON
 enforce_gtid_consistency=ON
@@ -30,7 +30,7 @@ group_replication_recovery_use_ssl=ON
 #
 innodb_monitor_enable=all 
 innodb_file_per_table
-innodb_buffer_pool_size=1024M
+innodb_buffer_pool_size=900M
 innodb_log_file_size=1000M
 innodb_log_buffer_size=8M
 #
@@ -53,7 +53,7 @@ max_connections = 60
 max_allowed_packet = 512M
 max_heap_table_size = 128M
 
-default-authentication-plugin=mysql_native_password
+#default-authentication-plugin=mysql_native_password
 datadir=/var/lib/mysql
 socket=/var/lib/mysql/mysql.sock
 
